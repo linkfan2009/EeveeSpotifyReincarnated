@@ -175,6 +175,7 @@ jobs:
                  "https://filebin.net/${BIN}/${FILENAME}" >/dev/null
             DOWNLOAD_URL="https://filebin.net/${BIN}/${FILENAME}"
             echo "Uploaded to: ${DOWNLOAD_URL}"
+            
             echo "- **${FILENAME}:** ${DOWNLOAD_URL}" >> "$GITHUB_STEP_SUMMARY"
           done
           echo "- _Filebin auto-deletes bins after a period of inactivity — download promptly._" >> "$GITHUB_STEP_SUMMARY"
